@@ -10,11 +10,15 @@ body{
     "footer footer footer";
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-rows: 100px auto auto;
+    background-color: blueviolet;
 }
 header{
     grid-area: head;
     background-color: aquamarine;
-    height: 100px;
+    height: 150px;
+}
+.não{
+    width: 75px;
 }
 main{
     grid-area: main;
@@ -22,7 +26,7 @@ main{
     height: 100px;
 }
 area{
-    grid-area: aside;
+    grid-area: absolute;
     background-color: chocolate;
     height: 100px;
 }
