@@ -9,31 +9,28 @@ body{
     "aside main main"
     "footer footer footer";
     grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: 100px auto auto;
+    grid-template-rows: 150px auto auto;
     background-color: blueviolet;
 }
 header{
     grid-area: head;
     background-color: aquamarine;
-    height: 150px;
 }
-.não{
+.nao{
     width: 75px;
 }
 main{
     grid-area: main;
     background-color: brown;
-    height: 100px;
 }
 area{
     grid-area: absolute;
     background-color: chocolate;
-    height: 100px;
 }
 footer{
     grid-area: footer;
     background-color: blue;
-    height: 100px;
 }
-@media only screen and (max-width: 800px){
+.nao2{
+    width: 75px;
 }
