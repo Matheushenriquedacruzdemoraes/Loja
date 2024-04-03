@@ -24,13 +24,24 @@ main{
     background-color: brown;
 }
 area{
-    grid-area: absolute;
+    grid-area: aside;
     background-color: chocolate;
 }
 footer{
     grid-area: footer;
-    background-color: blue;
+    background-color: olivedrab;
 }
 .nao2{
     width: 75px;
+}
+@media only screen and (max-width: 1000px) {
+    body{
+        grid-template-areas: 
+        "head"
+        "aside"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto 200px auto auto;
+    }
 }
