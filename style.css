@@ -16,6 +16,9 @@ header{
     grid-area: head;
     background-color: red;
 }
+aside{
+    background-color: aquamarine;
+}
 .nao{
     width: 75px;
 }
