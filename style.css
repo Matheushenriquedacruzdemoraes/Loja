@@ -60,10 +60,19 @@ footer{
     box-shadow: 3px 6px 9px color(srgb red green blue);
     transition: 0.2s;
     flex-direction: column;
+    box-shadow: 5px 8px 11px;
 }
-
-
-
+.card:hover{
+    background-color: darkgrey;
+    color: red;
+}
+.card:hover a{
+    background-color: rgb(red, green, blue);
+    color: black;
+}
+.card:hover img{
+    filter: invert(1)
+}
 
 
 
