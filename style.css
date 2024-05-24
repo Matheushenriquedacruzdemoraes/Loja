@@ -11,13 +11,16 @@ body{
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-rows: 150px auto auto;
     background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     grid-area: head;
     background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
 }
 aside{
     background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .nao{
     width: 75px;
@@ -25,14 +28,17 @@ aside{
 main{
     grid-area: main;
     background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
 }
 area{
     grid-area: aside;
     background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer{
     grid-area: footer;
     background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .nao2{
     width: 75px;
