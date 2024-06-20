@@ -15,24 +15,16 @@ body{
 }
 header{
     grid-area: head;
-    background-color: red;
+    background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
-aside{
-    background-color: aquamarine;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.nao{
-    width: 75px;
+.BigBom{
+    width: 150px;
+    position: 100px;
 }
 main{
     grid-area: main;
-    background-color: brown;
-    font-family: Arial, Helvetica, sans-serif;
-}
-area{
-    grid-area: aside;
-    background-color: brown;
+    background-color: red;
     font-family: Arial, Helvetica, sans-serif;
 }
 footer{
@@ -40,20 +32,18 @@ footer{
     background-color: yellow;
     font-family: Arial, Helvetica, sans-serif;
 }
-.nao2{
-    width: 75px;
-}
 .img{
-    width: 300px;
+    max-width: 300px;
     border-radius: 20px;
+    height: auto;
 }
-.caixa_mae{
-    /*      border: 2px red solid;
-    */      display: flex;
-        justify-content: center;
-        padding: 20px;
-        flex-wrap: wrap;
-        align-items: center;
+.caixa_mae {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Espaçamento interno de 20 pixels */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha conforme necessário */
+    align-items: center; /* Centraliza os itens verticalmente */
+    /* border: 2px red solid; */ /* Comentado para desativar a borda vermelha */
 }
 .card{
     display: flex;
@@ -79,19 +69,71 @@ footer{
 .card:hover img{
     filter: invert(1)
 }
+.card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+#menu-toggle {
+    display: none;
+}
 
+.menu-toggle-label {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1100;
+    color: #f80606;
+    font-size: 1.5rem;
+}
 
+aside {
+    grid-area: aside;
+    top: 0;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    background-color: red;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+}
 
+aside header {
+    text-align: center;
+    color: red;
+    padding: 10px;
+    background-color: #222;
+}
 
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
+aside ul li {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
 
-
-
-
-
-
-
-
+aside ul li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+#menu-toggle:checked + aside {
+    left: 0;
+}
 @media only screen and (max-width: 1000px) {
     body{
         grid-template-areas: 
