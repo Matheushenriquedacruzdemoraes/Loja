@@ -9,33 +9,33 @@ body {
     "main main aside"
     "footer footer footer";
     grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: 25% auto 195px;
+    grid-template-rows: 25% auto 25%;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
     grid-area: header;
-    background-color: red;
+    background-color: #262525;
 }
 main {
     grid-area: main;
 }
 aside{
-    background-color: red;
+    background-color: #D9B918;
 }
 footer{
     grid-area: footer;
-    background-color: red;
+    background-color: #262525;
 }
 .img{
-    max-width: 300px;
+    max-width: 400px;
 }
 .button{
-    display: inline-block;
+    display: center;
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: whitesmoke;
-    color: red;
+    background-color: #262525;
+    color: #D9B918;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -45,8 +45,8 @@ footer{
 }
 
 .button:hover {
-    background-color: red;
-    color: whitesmoke;
+    background-color: #F2E313;
+    color: #262525;
 }
 @media only screen and (max-width: 1000px) {
     body{

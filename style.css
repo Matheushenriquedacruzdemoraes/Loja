@@ -1,4 +1,5 @@
 *{
+    /* Isso tira margem */
     margin: 0;
 }
 body{
@@ -10,38 +11,44 @@ body{
     "footer footer footer";
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-rows: 150px auto auto;
-    background-color: whitesmoke;
+    background-color: #262525;
     font-family: Arial, Helvetica, sans-serif;
+    /* Essencialmente o Grid, tem que ser feito no Body também */
 }
 header{
     grid-area: head;
-    background-color: whitesmoke;
+    background-color: #262525;
     font-family: Arial, Helvetica, sans-serif;
+    /* Css do header, onde se especifica a are do header no grid */ 
 }
 .BigBom{
     width: 150px;
     position: 100px;
+    /* Css da logo, que está usando a class "BigBom.*/
 }
 main{
     grid-area: main;
-    background-color: red;
+    background-color: #D9B918;
     font-family: Arial, Helvetica, sans-serif;
+    /* Css do main, altera o Grid Area do Main*/
 }
 footer{
     grid-area: footer;
-    background-color: yellow;
+    background-color: #262525;
     font-family: Arial, Helvetica, sans-serif;
+    /* Css do footer, altera o Grid Area do footer*/
 }
 .img{
     max-width: 300px;
     border-radius: 20px;
     height: auto;
+    /* Css das imagems do card, classificadas como "img"*/
 }
 .caixa_mae {
     display: flex;
     justify-content: center; /* Centraliza os itens horizontalmente */
-    padding: 20px; /* Espaçamento interno de 20 pixels */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha conforme necessário */
+    padding: 20px; /* Espaçamento interno */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha sem estragar o card */
     align-items: center; /* Centraliza os itens verticalmente */
     /* border: 2px red solid; */ /* Comentado para desativar a borda vermelha */
 }
@@ -57,31 +64,34 @@ footer{
     transition: 0.2s;
     flex-direction: column;
     box-shadow: 5px 8px 11px;
+    /* Todos os 12 cards usam esse Css*/
 }
 .card:hover{
-    background-color: darkgrey;
-    color: red;
+    background-color: #262525;
+    color: #F2E313;
 }
 .card:hover a{
     background-color: rgb(red, green, blue);
     color: black;
 }
 .card:hover img{
-    filter: invert(1)
+    filter: brightness(1);
 }
 .card button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: whitesmoke;
-    color: red;
+    background-color: #8C7A1C;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
     text-align: center;
     transition: background-color 0.3s ease;
+    /* Isso é oque muda o botão */
 }
+/* Começo das coisas sobre o menu */
 #menu-toggle {
     display: none;
 }
@@ -92,29 +102,32 @@ footer{
     left: 20px;
     cursor: pointer;
     z-index: 1100;
-    color: #f80606;
+    color: #F2E313;
     font-size: 1.5rem;
+    /* Isso é aqueles três riscos */
 }
-
+/* Fim ds coisas sobre o menu */
 aside {
     grid-area: aside;
     top: 0;
     left: 250px;
     width: 250px;
     height: 100%;
-    background-color: red;
+    background-color: #D9B918;
     transition: left 0.3s ease;
     padding-top: 60px;
     z-index: 1000;
+    /* TODO o Aside teve que ser moldado pra virar um Menu, infelizmente não pude transforma-lo em retratil */
 }
 
 aside header {
     text-align: center;
-    color: red;
+    color: #D9B918;
     padding: 10px;
-    background-color: #222;
+    background-color: #262525;
+    /* Css do "Menu" */
 }
-
+/* Começo dos complementares do "Menu" aside*/
 aside ul {
     list-style-type: none;
     padding: 0;
@@ -134,6 +147,9 @@ aside ul li:hover {
 #menu-toggle:checked + aside {
     left: 0;
 }
+/* Fim dos complementares */ 
+
+/* Media é oque torna o flexbox responsivo*/
 @media only screen and (max-width: 1000px) {
     body{
         grid-template-areas: 

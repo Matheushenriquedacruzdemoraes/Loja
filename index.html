@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Mercado Big-Bom</title>
     <link rel="stylesheet" href="style.css">
-<head>
+<head> <!--Onde se mexe no título da página e linka o CSS-->
 <body>
-    <header>
-        <img class="BigBom" src="imagens/BigBomLogo.png">
+    <header> <!--Isso aqui é o header. Aqui só tem a logo-->
+        <img class="BigBom" src="imagens/BigBomEscuro.png">
     </header>
     <main>
-        <section class="caixa_mae"> 
+        <section class="caixa_mae"> <!--Ínicio dos Cards e Section da caixa Mãe-->
             <div class="card">
                 <img class="img" src="imagens/PoteVerde.jpg" alt="pote verde">
                 <h2>Pote Verde</h2>
@@ -95,22 +95,20 @@
                  <h1>R$23,99</h1>
                  <button>Ver mais</button>
             </div>
-        </section>
+        </section> <!--Fim dos cards e da section da caixa mãe-->
     </main>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-toggle-label">☰</label>
+    <input type="checkbox" id="menu-toggle"> <!--Ainda não sei oque ta errado no checkbox mas isto aqui é ele-->
+    <label for="menu-toggle" class="menu-toggle-label">☰</label> <!--Isso era pra abri e fecha o menu, mas como disse, não funciona-->
     
-    <aside id="menu">
-        <header>Menu</header>
-        <ul>
+    <aside id="menu"> <!--Usei ID pro CSS reconhecer melhor-->
+        <header>Menu</header> <!--Sim, eu tentei separar meu aside como se fosse um Grid e agora to com medo de mexe-->
+        <ul> <!--É aonde as mensagems do menu ficam-->
             <li>Sobre...</li>
             <li>Promoçao do dia</li>
-            <li><a href="cadastro.html" target="_blank"> Cadastro</a></li>
-            <li>Item 4</li>
+            <li><a href="cadastro.html" target="_blank"> Cadastro</a></li> <!--O unico que funciona-->
         </ul>
-    </aside>
-    <footer>
-        <h1>Footer</h1>
+    </aside> <!--Fim do Aside-->
+    <footer><!--Por conta de não ter idea sobre oque fazer com o footer, aqui só tem um comercial-->
         <a href="https://www.youtube.com/watch?v=6y2cy4-ThtQ" target="_blank"> Comercial</a>
     </footer>
-</body>
+</body> <!--Como puderam ver, o Index é BEM mais fácil do que o CSS-->

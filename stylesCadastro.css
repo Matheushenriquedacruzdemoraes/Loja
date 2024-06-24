@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: whitesmoke;
+    background-color: #262525;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +10,7 @@ body {
 }
 
 form {
-    background-color: red;
+    background-color: #F2E313ed;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #8C7A1C;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -38,5 +38,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #262525;
 }
