@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="stylesCadastro.css">
+    <link rel="stylesheet" href="stylesCadastro.css"> <!-- Conecta o CSS correto ao seu devido HTML-->
 </head>
 <body>
 
-<form action="#">
+<form action="#"> <!-- Quando cliente tem que enviar os dados do formulário para alguma página, e ali no "Form Action= "#"" você diz qual, como esse é meramente ilustrativo, não encaminha os dados a lugar nenhum -->
     <h2>Cadastro</h2>
-    <input type="text" placeholder="Nome" required>
-    <input type="email" placeholder="Email" required>
-    <input type="password" placeholder="Senha" required>
-    <input type="submit" value="Cadastrar">
+    <input type="text" placeholder="Nome" required> <!-- Input é para poder digitar dentro do espaço em branco -->
+    <input type="email" placeholder="Email" required> <!-- Placeholder é oque aparece no espaço em branco antes de digitarmos -->
+    <input type="password" placeholder="Senha" required> <!-- Required significa que a pagína não executara a função de Cadastrar enquanto um desses Inputs esteja em branco -->
+    <input type="submit" value="Cadastrar"> <!--O atributo value especifica o valor a ser enviado a um servidor quando um formulário é enviado, nesse caso, o "Valor" é cadastrar -->
 </form>
 
 </body>

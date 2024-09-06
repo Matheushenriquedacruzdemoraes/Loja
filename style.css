@@ -19,7 +19,7 @@ header{
     grid-area: head;
     background-color: #262525;
     font-family: Arial, Helvetica, sans-serif;
-    /* Css do header, onde se especifica a are do header no grid */ 
+    /* Css do header, onde se especifica a area do header no grid */ 
 }
 .BigBom{
     width: 150px;
@@ -77,6 +77,7 @@ footer{
 .card:hover img{
     filter: brightness(1);
 }
+/* Todos os Hovers servem para editar a aparência e propriedade do card */
 .card button {
     display: block;
     width: 100%;
